@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
         VStack {
-            Text("Hello, world!")
-                .padding()
+            Text("Hello, world!").padding()
+            TextField("Email", text: self.$email).padding()
+            TextField("Password", text: self.$password).padding()
+            Button("Sign In") {}
         }
     }
 }
