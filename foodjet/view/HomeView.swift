@@ -62,7 +62,6 @@ struct FoodItem : View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
-            .previewInterfaceOrientation(.portrait)
+        HomeView().previewInterfaceOrientation(.portrait)
     }
 }
