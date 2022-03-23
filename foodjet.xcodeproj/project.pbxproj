@@ -17,6 +17,7 @@
 		8E3FC54A27E8D3F20080A950 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54927E8D3F20080A950 /* HomeViewDelegate.swift */; };
 		8E3FC54C27EA1FA20080A950 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54B27EA1FA20080A950 /* SettingView.swift */; };
 		8E3FC54E27EB60F00080A950 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54D27EB60F00080A950 /* NotificationView.swift */; };
+		8E3FC55227EB6FD80080A950 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC55127EB6FD80080A950 /* NotificationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		8E3FC54927E8D3F20080A950 /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		8E3FC54B27EA1FA20080A950 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8E3FC54D27EB60F00080A950 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		8E3FC55027EB6E9C0080A950 /* MockNotification.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockNotification.json; sourceTree = "<group>"; };
+		8E3FC55127EB6FD80080A950 /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		8E3FC53127E4ABD40080A950 /* foodjet */ = {
 			isa = PBXGroup;
 			children = (
+				8E3FC54F27EB6E7E0080A950 /* mock */,
 				8E3FC54427E7733C0080A950 /* presenter */,
 				8E3FC54327E772B20080A950 /* model */,
 				8E3FC54027E76CA90080A950 /* view */,
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8E3FC54527E773660080A950 /* FoodStoreItem.swift */,
+				8E3FC55127EB6FD80080A950 /* NotificationItem.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -107,6 +112,14 @@
 				8E3FC54927E8D3F20080A950 /* HomeViewDelegate.swift */,
 			);
 			path = presenter;
+			sourceTree = "<group>";
+		};
+		8E3FC54F27EB6E7E0080A950 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				8E3FC55027EB6E9C0080A950 /* MockNotification.json */,
+			);
+			path = mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +200,7 @@
 				8E3FC54627E773660080A950 /* FoodStoreItem.swift in Sources */,
 				8E3FC54827E8D3370080A950 /* HomePresenter.swift in Sources */,
 				8E3FC53327E4ABD40080A950 /* foodjetApp.swift in Sources */,
+				8E3FC55227EB6FD80080A950 /* NotificationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

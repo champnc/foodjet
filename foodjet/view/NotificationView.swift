@@ -8,30 +8,37 @@
 import SwiftUI
 
 struct NotificationView: View {
+    @ObservedObject var datas = ReadData()
     var body: some View {
         NavigationView {
-            List() {
-                ForEach(0..<8) { _ in
-                    HStack {
-                        NotificationItem()
-                    }
-                }
+            List(datas.notificationList) { notification in
+                NotificationItemView(title: notification.title,time: notification.time,desc: notification.description)
             }.navigationTitle(Text("Notification")).listStyle(InsetGroupedListStyle())
         }
     }
 }
 
-struct NotificationItem: View {
+struct NotificationItemView: View {
+    var title: String
+    var time: String
+    var desc: String
+    
+    init(title: String, time: String, desc: String) {
+        self.title = title
+        self.time = time
+        self.desc = desc
+    }
+    
     var body: some View {
         HStack(spacing : 20) {
             VStack(alignment: .leading, spacing: -20) {
                 HStack {
-                    Text("Notification").bold().frame(height: 50)
+                    Text(title).bold().frame(height: 50)
                     Spacer()
-                    Text("10:00").frame(height: 50)
+                    Text(time).frame(height: 50)
                 }
                 HStack(alignment: .lastTextBaseline) {
-                    Text("Notification").frame(height: 50).font(.caption2)
+                    Text(desc).frame(height: 50).font(.caption2)
                 }
             }
             Circle().fill(Color.orange).frame(width: 10, height: 10)
@@ -42,5 +49,26 @@ struct NotificationItem: View {
 struct NotificationView_Previews: PreviewProvider {
     static var previews: some View {
         NotificationView()
+    }
+}
+
+class ReadData: ObservableObject  {
+    @Published var notificationList = [NotificationItem]()
+
+        
+    init(){
+        loadData()
+    }
+    
+    func loadData()  {
+        guard let url = Bundle.main.url(forResource: "MockNotification", withExtension: "json")
+            else {
+                print("Json file not found")
+                return
+            }
+        
+        let data = try? Data(contentsOf: url)
+        let notification = try? JSONDecoder().decode([NotificationItem].self, from: data!)
+        self.notificationList = notification!
     }
 }
