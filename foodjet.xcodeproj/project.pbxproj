@@ -13,11 +13,11 @@
 		8E3FC53A27E4ABD60080A950 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3FC53927E4ABD60080A950 /* Preview Assets.xcassets */; };
 		8E3FC54227E76CE20080A950 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54127E76CE20080A950 /* HomeView.swift */; };
 		8E3FC54627E773660080A950 /* FoodStoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54527E773660080A950 /* FoodStoreItem.swift */; };
-		8E3FC54827E8D3370080A950 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54727E8D3370080A950 /* HomePresenter.swift */; };
-		8E3FC54A27E8D3F20080A950 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54927E8D3F20080A950 /* HomeViewDelegate.swift */; };
 		8E3FC54C27EA1FA20080A950 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54B27EA1FA20080A950 /* SettingView.swift */; };
 		8E3FC54E27EB60F00080A950 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC54D27EB60F00080A950 /* NotificationView.swift */; };
 		8E3FC55227EB6FD80080A950 /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC55127EB6FD80080A950 /* NotificationItem.swift */; };
+		8E3FC55327EB7AAF0080A950 /* MockNotification.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E3FC55027EB6E9C0080A950 /* MockNotification.json */; };
+		8E4ABF8C27ECBA4C00EF43F9 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4ABF8B27ECBA4C00EF43F9 /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +28,11 @@
 		8E3FC53927E4ABD60080A950 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E3FC54127E76CE20080A950 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8E3FC54527E773660080A950 /* FoodStoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreItem.swift; sourceTree = "<group>"; };
-		8E3FC54727E8D3370080A950 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		8E3FC54927E8D3F20080A950 /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		8E3FC54B27EA1FA20080A950 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		8E3FC54D27EB60F00080A950 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		8E3FC55027EB6E9C0080A950 /* MockNotification.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockNotification.json; sourceTree = "<group>"; };
 		8E3FC55127EB6FD80080A950 /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
+		8E4ABF8B27ECBA4C00EF43F9 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				8E3FC54F27EB6E7E0080A950 /* mock */,
-				8E3FC54427E7733C0080A950 /* presenter */,
+				8E3FC54427E7733C0080A950 /* viewmodel */,
 				8E3FC54327E772B20080A950 /* model */,
 				8E3FC54027E76CA90080A950 /* view */,
 				8E3FC53627E4ABD60080A950 /* Assets.xcassets */,
@@ -105,13 +104,12 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		8E3FC54427E7733C0080A950 /* presenter */ = {
+		8E3FC54427E7733C0080A950 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
-				8E3FC54727E8D3370080A950 /* HomePresenter.swift */,
-				8E3FC54927E8D3F20080A950 /* HomeViewDelegate.swift */,
+				8E4ABF8B27ECBA4C00EF43F9 /* NotificationViewModel.swift */,
 			);
-			path = presenter;
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 		8E3FC54F27EB6E7E0080A950 /* mock */ = {
@@ -180,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3FC55327EB7AAF0080A950 /* MockNotification.json in Resources */,
 				8E3FC53A27E4ABD60080A950 /* Preview Assets.xcassets in Resources */,
 				8E3FC53727E4ABD60080A950 /* Assets.xcassets in Resources */,
 			);
@@ -193,12 +192,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3FC54227E76CE20080A950 /* HomeView.swift in Sources */,
+				8E4ABF8C27ECBA4C00EF43F9 /* NotificationViewModel.swift in Sources */,
 				8E3FC53527E4ABD40080A950 /* ContentView.swift in Sources */,
-				8E3FC54A27E8D3F20080A950 /* HomeViewDelegate.swift in Sources */,
 				8E3FC54E27EB60F00080A950 /* NotificationView.swift in Sources */,
 				8E3FC54C27EA1FA20080A950 /* SettingView.swift in Sources */,
 				8E3FC54627E773660080A950 /* FoodStoreItem.swift in Sources */,
-				8E3FC54827E8D3370080A950 /* HomePresenter.swift in Sources */,
 				8E3FC53327E4ABD40080A950 /* foodjetApp.swift in Sources */,
 				8E3FC55227EB6FD80080A950 /* NotificationItem.swift in Sources */,
 			);

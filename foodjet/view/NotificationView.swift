@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NotificationView: View {
     @ObservedObject var datas = ReadData()
+    
     var body: some View {
         NavigationView {
             List(datas.notificationList) { notification in
