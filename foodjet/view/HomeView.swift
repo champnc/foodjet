@@ -9,54 +9,55 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack(alignment: .leading){
-            Text("Header").bold().font(.title)
-            VStack(alignment: .leading) {
-                Text("Header").font(.title2)
-                ScrollView(.horizontal,showsIndicators: false){
-                    HStack(spacing:20){
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
+        NavigationView {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Text("Header").font(.title2)
+                    ScrollView(.horizontal,showsIndicators: false){
+                        HStack(spacing:20){
+                            FoodItem()
+                            FoodItem()
+                            FoodItem()
+                            FoodItem()
+                        }.padding()
                     }
-                }
-                Text("Header").font(.title2)
-                ScrollView(.horizontal,showsIndicators: false){
-                    HStack(spacing:20) {
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
+                    Text("Header").font(.title2)
+                    ScrollView(.horizontal,showsIndicators: false){
+                        HStack(spacing:20) {
+                            FoodItem()
+                            FoodItem()
+                            FoodItem()
+                            FoodItem()
+                        }.padding()
                     }
-                }
-                Text("Header").font(.title2)
-                ScrollView(.horizontal,showsIndicators: false){
-                    HStack(spacing:20) {
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
+                    Text("Header").font(.title2)
+                    ScrollView(.horizontal,showsIndicators: false){
+                        HStack(spacing:20) {
+                            FoodItem()
+                            FoodItem()
+                            FoodItem()
+                            FoodItem()
+                        }.padding()
                     }
-                }
-                Text("Header").font(.title2)
-                ScrollView(.horizontal,showsIndicators: false){
-                    HStack(spacing:20) {
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
-                        FoodItem()
-                    }
-                }
-                Spacer()
-            }.padding()
-        }.frame(width: .infinity, height: .infinity, alignment: .topLeading).background(Color.red)
+//                    Text("Header").font(.title2)
+//                    ScrollView(.horizontal,showsIndicators: false){
+//                        HStack(spacing:20) {
+//                            FoodItem()
+//                            FoodItem()
+//                            FoodItem()
+//                            FoodItem()
+//                        }
+//                    }
+                    
+                }.padding()
+            }.background(Color.white).navigationTitle(Text("Home"))
+        }
     }
 }
 
 struct FoodItem : View {
     var body: some View {
-        Text("Item").frame(width: 200, height: 150).background(Color.white).cornerRadius(15)
+        Text("Item").frame(width: 200, height: 150).background(Color.white).cornerRadius(15).shadow(color: Color.gray, radius: 2, x: 2, y: 2)
     }
 }
 

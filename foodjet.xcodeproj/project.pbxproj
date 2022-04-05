@@ -65,6 +65,7 @@
 		8E3FC53127E4ABD40080A950 /* foodjet */ = {
 			isa = PBXGroup;
 			children = (
+				8E3FC53227E4ABD40080A950 /* foodjetApp.swift */,
 				8E3FC54F27EB6E7E0080A950 /* mock */,
 				8E3FC54427E7733C0080A950 /* viewmodel */,
 				8E3FC54327E772B20080A950 /* model */,
@@ -86,7 +87,6 @@
 		8E3FC54027E76CA90080A950 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				8E3FC53227E4ABD40080A950 /* foodjetApp.swift */,
 				8E3FC53427E4ABD40080A950 /* ContentView.swift */,
 				8E3FC54127E76CE20080A950 /* HomeView.swift */,
 				8E3FC54B27EA1FA20080A950 /* SettingView.swift */,
