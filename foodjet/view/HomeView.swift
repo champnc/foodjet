@@ -50,7 +50,7 @@ struct HomeView: View {
 //                    }
                     
                 }.padding()
-            }.background(Color.white).navigationTitle(Text("Home"))
+            }.navigationTitle(Text("Home"))
         }
     }
 }
@@ -64,5 +64,6 @@ struct FoodItem : View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView().previewInterfaceOrientation(.portrait)
+        FoodItem()
     }
 }

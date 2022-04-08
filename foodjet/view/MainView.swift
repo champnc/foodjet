@@ -26,7 +26,7 @@ struct MainView: View {
                 Text("Setting")
                 Image(systemName: "wrench.fill")
             }
-        }
+        }.accentColor(.orange)
     }
 }
 
