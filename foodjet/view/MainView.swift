@@ -14,6 +14,10 @@ struct MainView: View {
                 Text("Home")
                 Image(systemName: "house.fill")
             }
+            OrderView().tabItem {
+                Text("Order")
+                Image(systemName: "clock.arrow.circlepath")
+            }
             NotificationView().tabItem {
                 Text("Notification")
                 Image(systemName: "envelope").overlay(NotificationLabelView(digit: 0))

@@ -20,6 +20,7 @@
 		8E4ABF8C27ECBA4C00EF43F9 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4ABF8B27ECBA4C00EF43F9 /* NotificationViewModel.swift */; };
 		8E66D63A27FF3C57002DA07B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66D63927FF3C57002DA07B /* MainView.swift */; };
 		8E66D63D27FF3E99002DA07B /* NotificationLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66D63C27FF3E99002DA07B /* NotificationLabelView.swift */; };
+		8E66D63F280074DB002DA07B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66D63E280074DB002DA07B /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8E4ABF8B27ECBA4C00EF43F9 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		8E66D63927FF3C57002DA07B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8E66D63C27FF3E99002DA07B /* NotificationLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLabelView.swift; sourceTree = "<group>"; };
+		8E66D63E280074DB002DA07B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				8E3FC54B27EA1FA20080A950 /* SettingView.swift */,
 				8E3FC54D27EB60F00080A950 /* NotificationView.swift */,
 				8E66D63927FF3C57002DA07B /* MainView.swift */,
+				8E66D63E280074DB002DA07B /* OrderView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				8E3FC54C27EA1FA20080A950 /* SettingView.swift in Sources */,
 				8E3FC54627E773660080A950 /* FoodStoreItem.swift in Sources */,
 				8E3FC53327E4ABD40080A950 /* foodjetApp.swift in Sources */,
+				8E66D63F280074DB002DA07B /* OrderView.swift in Sources */,
 				8E66D63D27FF3E99002DA07B /* NotificationLabelView.swift in Sources */,
 				8E3FC55227EB6FD80080A950 /* NotificationItem.swift in Sources */,
 			);
