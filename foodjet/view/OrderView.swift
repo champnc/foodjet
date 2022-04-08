@@ -16,21 +16,21 @@ struct OrderView: View {
                 HStack {
                     Spacer()
                     VStack {
-                        Text("First tab").foregroundColor(selectedTab == .FirstTab ? Color.blue : Color.gray)
+                        Text("Ongoing").foregroundColor(selectedTab == .FirstTab ? Color.orange : Color.gray)
                     }
                     .onTapGesture {
                         self.selectedTab = .FirstTab
                     }
                     Spacer()
                     VStack {
-                        Text("Second tab").foregroundColor(selectedTab == .SecondTab ? Color.blue : Color.gray)
+                        Text("Finished").foregroundColor(selectedTab == .SecondTab ? Color.orange : Color.gray)
                     }
                     .onTapGesture {
                         self.selectedTab = .SecondTab
                     }
                     Spacer()
                     VStack {
-                        Text("Third tab").foregroundColor(selectedTab == .ThirdTab ? Color.blue : Color.gray)
+                        Text("Canceled").foregroundColor(selectedTab == .ThirdTab ? Color.orange : Color.gray)
                     }
                     .onTapGesture {
                         self.selectedTab = .ThirdTab
@@ -45,7 +45,7 @@ struct OrderView: View {
                 } else {
                     ThirdTabView()
                 }
-            }.background(Color.white).navigationTitle(Text("Order"))
+            }.navigationTitle(Text("Order"))
         }
     }
 }
@@ -53,6 +53,7 @@ struct OrderView: View {
 struct OrderView_Previews: PreviewProvider {
     static var previews: some View {
         OrderView()
+        OrderItem()
     }
 }
 
@@ -65,26 +66,63 @@ enum Tabs {
 struct FirstTabView : View {
     
     var body : some View {
-        ScrollView {
-            Text("FIRST TAB VIEW")
-        }.frame(maxHeight: .infinity)
+        List {
+            OrderItem()
+            OrderItem()
+            OrderItem()
+        }.frame(maxHeight: .infinity).refreshable {
+            
+        }
     }
 }
 
 struct SecondTabView : View {
     
     var body : some View {
-        ScrollView {
-            Text("SECOND TAB VIEW")
-        }.frame(maxHeight: .infinity)
+        List {
+            OrderItem()
+            OrderItem()
+            OrderItem()
+        }.frame(maxHeight: .infinity).refreshable {
+            
+        }
     }
 }
 
 struct ThirdTabView : View {
     
     var body : some View {
-        ScrollView {
-            Text("THIRD TAB VIEW")
-        }.frame(maxHeight: .infinity)
+        List {
+            OrderItem()
+            OrderItem()
+            OrderItem()
+        }.frame(maxHeight: .infinity).refreshable {
+            
+        }
+    }
+}
+
+struct OrderItem : View {
+    var body: some View {
+        HStack {
+            Circle()
+                .fill(Color.yellow)
+                .frame(width: 60, height: 60)
+            VStack {
+                VStack(alignment: .leading) {
+                    Text("Name").bold()
+                    HStack {
+                        Text("From")
+                        Spacer()
+                        Text("Date")
+                    }
+                    HStack {
+                        Text("To")
+                        Spacer()
+                        Text("Time")
+                    }
+                }.frame(maxWidth: .infinity).padding()
+            }
+        }
     }
 }
