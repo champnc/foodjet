@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var searchQuery = ""
     var body: some View {
         NavigationView {
             ScrollView {
@@ -50,7 +51,7 @@ struct HomeView: View {
 //                    }
                     
                 }.padding()
-            }.navigationTitle(Text("Home"))
+            }.navigationTitle(Text("Home")).searchable(text: $searchQuery,placement: .navigationBarDrawer(displayMode: .always))
         }
     }
 }
