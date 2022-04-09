@@ -58,7 +58,7 @@ struct HomeView: View {
 
 struct FoodItem : View {
     var body: some View {
-        Text("Item").frame(width: 200, height: 150).background(Color.white).cornerRadius(15).shadow(color: Color.gray, radius: 2, x: 2, y: 2)
+        Text("Item").frame(width: 200, height: 150).background(Color.yellow).cornerRadius(15).shadow(color: Color.gray, radius: 2, x: 2, y: 2)
     }
 }
 

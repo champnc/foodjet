@@ -110,14 +110,14 @@ struct OrderItem : View {
                 .frame(width: 60, height: 60)
             VStack {
                 VStack(alignment: .leading) {
-                    Text("Name").bold()
+                    Text("RestaurantName").bold()
                     HStack {
-                        Text("From")
+                        Text("From :")
                         Spacer()
                         Text("Date")
                     }
                     HStack {
-                        Text("To")
+                        Text("To :")
                         Spacer()
                         Text("Time")
                     }
