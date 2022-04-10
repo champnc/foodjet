@@ -24,7 +24,7 @@ struct MainView: View {
             }
             SettingView().tabItem {
                 Text("Setting")
-                Image(systemName: "wrench.fill")
+                Image(systemName: "gearshape.fill")
             }
         }.accentColor(.orange)
     }
