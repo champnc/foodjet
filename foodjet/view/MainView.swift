@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var viewRouter: ViewRouter
     var body: some View {
         TabView {
             HomeView().tabItem {
@@ -32,6 +33,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(viewRouter: ViewRouter())
     }
 }
