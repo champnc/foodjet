@@ -11,6 +11,7 @@
 		8E3CEA1028040C2A00CCE925 /* AuthenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CEA0F28040C2A00CCE925 /* AuthenView.swift */; };
 		8E3CEA1228041A3200CCE925 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CEA1128041A3200CCE925 /* BaseView.swift */; };
 		8E3CEA1428041ACF00CCE925 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CEA1328041ACF00CCE925 /* ViewRouter.swift */; };
+		8E3CEA182805CD1800CCE925 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CEA172805CD1800CCE925 /* CartView.swift */; };
 		8E3FC53327E4ABD40080A950 /* foodjetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC53227E4ABD40080A950 /* foodjetApp.swift */; };
 		8E3FC53527E4ABD40080A950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3FC53427E4ABD40080A950 /* ContentView.swift */; };
 		8E3FC53727E4ABD60080A950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3FC53627E4ABD60080A950 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		8E3CEA0F28040C2A00CCE925 /* AuthenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenView.swift; sourceTree = "<group>"; };
 		8E3CEA1128041A3200CCE925 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		8E3CEA1328041ACF00CCE925 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		8E3CEA172805CD1800CCE925 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		8E3FC52F27E4ABD40080A950 /* foodjet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodjet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3FC53227E4ABD40080A950 /* foodjetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodjetApp.swift; sourceTree = "<group>"; };
 		8E3FC53427E4ABD40080A950 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8E3CEA0F28040C2A00CCE925 /* AuthenView.swift */,
 				8E3CEA1128041A3200CCE925 /* BaseView.swift */,
 				8E3CEA1328041ACF00CCE925 /* ViewRouter.swift */,
+				8E3CEA172805CD1800CCE925 /* CartView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				8E3FC53327E4ABD40080A950 /* foodjetApp.swift in Sources */,
 				8E66D63F280074DB002DA07B /* OrderView.swift in Sources */,
 				8E66D63D27FF3E99002DA07B /* NotificationLabelView.swift in Sources */,
+				8E3CEA182805CD1800CCE925 /* CartView.swift in Sources */,
 				8E3FC55227EB6FD80080A950 /* NotificationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
