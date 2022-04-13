@@ -10,7 +10,38 @@ import SwiftUI
 struct DetailView: View {
     var body: some View {
         NavigationView {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ScrollView(.vertical) {
+                VStack {
+                    ScrollView(.horizontal) {
+                        HStack {
+                            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                            Text("Hello, World!")
+                            Text("Hello, World!")
+                        }
+                    }
+                    VStack {
+                        HStack{
+                            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).font(.title2).bold()
+                            Spacer()
+                        }
+                        var list = ["1","2","3"]
+                        ForEach(list) { item in
+                            Text("\(item) List Item")
+                        }
+                        
+                        
+                    }.padding().background()
+//                    VStack {
+//                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//                    }
+//                    VStack {
+//                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//                    }
+//                    VStack {
+//                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//                    }
+                }
+            }
         }
     }
 }
