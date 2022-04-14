@@ -61,7 +61,7 @@ struct FoodItem : View {
         NavigationLink(destination: {
             DetailView()
         }, label: {
-            Text("Item").foregroundColor(Color.black).frame(width: 200, height: 150).background(Color.yellow).cornerRadius(15).shadow(color: Color.gray, radius: 2, x: 2, y: 2)
+            Text("Item").foregroundColor(Color.black).frame(width: 200, height: 150).background(Color.yellowLight).cornerRadius(15).shadow(color: Color.gray, radius: 2, x: 2, y: 2)
         })
     }
 }

@@ -16,21 +16,21 @@ struct OrderView: View {
                 HStack {
                     Spacer()
                     VStack {
-                        Text("Ongoing").foregroundColor(selectedTab == .FirstTab ? Color.orange : Color.gray)
+                        Text("Ongoing").foregroundColor(selectedTab == .FirstTab ? Color.orangeLight : Color.gray)
                     }
                     .onTapGesture {
                         self.selectedTab = .FirstTab
                     }
                     Spacer()
                     VStack {
-                        Text("Finished").foregroundColor(selectedTab == .SecondTab ? Color.orange : Color.gray)
+                        Text("Finished").foregroundColor(selectedTab == .SecondTab ? Color.orangeLight : Color.gray)
                     }
                     .onTapGesture {
                         self.selectedTab = .SecondTab
                     }
                     Spacer()
                     VStack {
-                        Text("Canceled").foregroundColor(selectedTab == .ThirdTab ? Color.orange : Color.gray)
+                        Text("Canceled").foregroundColor(selectedTab == .ThirdTab ? Color.orangeLight : Color.gray)
                     }
                     .onTapGesture {
                         self.selectedTab = .ThirdTab
@@ -106,7 +106,7 @@ struct OrderItem : View {
     var body: some View {
         HStack {
             Circle()
-                .fill(Color.yellow)
+                .fill(Color.yellowLight)
                 .frame(width: 60, height: 60)
             VStack {
                 VStack(alignment: .leading) {

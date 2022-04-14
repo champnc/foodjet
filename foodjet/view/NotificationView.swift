@@ -42,7 +42,7 @@ struct NotificationItemView: View {
                     Text(desc).frame(height: 50).font(.caption2)
                 }
             }
-            Circle().fill(Color.orange).frame(width: 10, height: 10)
+            Circle().fill(Color.orangeLight).frame(width: 10, height: 10)
         }
     }
 }

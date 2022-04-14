@@ -27,7 +27,7 @@ struct MainView: View {
                 Text("Setting")
                 Image(systemName: "gearshape.fill")
             }
-        }.accentColor(.orange)
+        }.accentColor(.orangeLight)
     }
 }
 

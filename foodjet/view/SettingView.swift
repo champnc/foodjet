@@ -17,13 +17,13 @@ struct SettingView: View {
                 Section(header: Text("Notifications settings")) {
                     Toggle(isOn: $enableNotification) {
                         Text("Notification:")
-                    }.tint(.orange)
+                    }.tint(.orangeLight)
                 }
                 
                 Section(header: Text("Theme setting")) {
                     Toggle(isOn: $enableDarkTheme) {
                         Text("Dark theme:")
-                    }.tint(.orange)
+                    }.tint(.orangeLight)
                 }
             }.navigationBarTitle(Text("Settings"))
         }

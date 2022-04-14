@@ -62,13 +62,13 @@ struct MenuSectionView: View {
             }
             ForEach(list) { item in
                 HStack {
-                    Text("image").frame(width: 75, height: 75).foregroundColor(.black).background(.yellow).cornerRadius(5).shadow(color: .gray, radius: 2, x: 2, y: 2)
+                    Text("image").frame(width: 75, height: 75).foregroundColor(.black).background(Color.yellowLight).cornerRadius(5).shadow(color: .gray, radius: 2, x: 2, y: 2)
                     VStack(alignment: .leading) {
                         Text("\(item.name) Item")
                         Text("\(item.price.formatted()) ฿").bold()
                     }.padding(.leading)
                     Spacer()
-                    Image(systemName: "plus").foregroundColor(.orange)
+                    Image(systemName: "plus").foregroundColor(.orangeLight)
                 }
                 Divider()
             }
@@ -81,7 +81,7 @@ struct MenuSectionView: View {
 struct MenuOverviewItemView: View {
     var body: some View {
         ZStack {
-            Text("Item").foregroundColor(Color.black).frame(width: 300, height: 250).background(Color.yellow).cornerRadius(15).shadow(color: Color.gray, radius: 2, x: 2, y: 2)
+            Text("Item").foregroundColor(Color.black).frame(width: 300, height: 250).background(Color.yellowLight).cornerRadius(15).shadow(color: Color.gray, radius: 2, x: 2, y: 2)
         }
     }
 }
