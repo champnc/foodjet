@@ -11,47 +11,42 @@ struct HomeView: View {
     @State var searchQuery = ""
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(alignment: .leading) {
-                    Text("Header").font(.title2)
-                    ScrollView(.horizontal,showsIndicators: false){
-                        HStack(spacing:20){
-                            FoodItem()
-                            FoodItem()
-                            FoodItem()
-                            FoodItem()
-                        }.padding()
-                    }
-                    Text("Header").font(.title2)
-                    ScrollView(.horizontal,showsIndicators: false){
-                        HStack(spacing:20) {
-                            FoodItem()
-                            FoodItem()
-                            FoodItem()
-                            FoodItem()
-                        }.padding()
-                    }
-                    Text("Header").font(.title2)
-                    ScrollView(.horizontal,showsIndicators: false){
-                        HStack(spacing:20) {
-                            FoodItem()
-                            FoodItem()
-                            FoodItem()
-                            FoodItem()
-                        }.padding()
-                    }
-//                    Text("Header").font(.title2)
-//                    ScrollView(.horizontal,showsIndicators: false){
-//                        HStack(spacing:20) {
-//                            FoodItem()
-//                            FoodItem()
-//                            FoodItem()
-//                            FoodItem()
-//                        }
-//                    }
-                    
-                }.padding()
-            }.navigationTitle(Text("Home")).searchable(text: $searchQuery,placement: .navigationBarDrawer(displayMode: .always))
+            ZStack(alignment: .bottomTrailing) {
+                ScrollView {
+                    VStack(alignment: .leading) {
+                        Text("Header").font(.title2)
+                        ScrollView(.horizontal,showsIndicators: false){
+                            HStack(spacing:20){
+                                FoodItem()
+                                FoodItem()
+                                FoodItem()
+                                FoodItem()
+                            }.padding()
+                        }
+                        Text("Header").font(.title2)
+                        ScrollView(.horizontal,showsIndicators: false){
+                            HStack(spacing:20) {
+                                FoodItem()
+                                FoodItem()
+                                FoodItem()
+                                FoodItem()
+                            }.padding()
+                        }
+                        Text("Header").font(.title2)
+                        ScrollView(.horizontal,showsIndicators: false){
+                            HStack(spacing:20) {
+                                FoodItem()
+                                FoodItem()
+                                FoodItem()
+                                FoodItem()
+                            }.padding()
+                        }
+                    }.padding()
+                }.navigationTitle(Text("Home")).searchable(text: $searchQuery,placement: .navigationBarDrawer(displayMode: .always))
+                if true {
+                    Circle().foregroundColor(.black).frame(width: 75, height: 75).offset(x: -20, y: -20)
+                }
+            }
         }
     }
 }
