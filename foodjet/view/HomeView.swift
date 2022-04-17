@@ -44,7 +44,14 @@ struct HomeView: View {
                     }.padding()
                 }.navigationTitle(Text("Home")).searchable(text: $searchQuery,placement: .navigationBarDrawer(displayMode: .always))
                 if true {
-                    Circle().foregroundColor(.black).frame(width: 75, height: 75).offset(x: -20, y: -20)
+                    NavigationLink {
+                        CartView()
+                    } label: {
+                        ZStack {
+                            Circle().foregroundColor(.white).frame(width: 75, height: 75).offset(x: -20, y: -20).shadow(color: .gray, radius: 3)
+                            Image(systemName: "cart.fill").foregroundColor(.orangeLight).font(.system(size: 32, weight: .bold)).offset(x: -20, y: -20)
+                        }
+                    }
                 }
             }
         }
