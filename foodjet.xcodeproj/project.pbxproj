@@ -28,6 +28,8 @@
 		8E66D63A27FF3C57002DA07B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66D63927FF3C57002DA07B /* MainView.swift */; };
 		8E66D63D27FF3E99002DA07B /* NotificationLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66D63C27FF3E99002DA07B /* NotificationLabelView.swift */; };
 		8E66D63F280074DB002DA07B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66D63E280074DB002DA07B /* OrderView.swift */; };
+		8E8B99C7280DBC26000CF8C6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B99C6280DBC26000CF8C6 /* OnboardingView.swift */; };
+		8E8B99C9280DBC4A000CF8C6 /* SubOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B99C8280DBC4A000CF8C6 /* SubOnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		8E66D63927FF3C57002DA07B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8E66D63C27FF3E99002DA07B /* NotificationLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLabelView.swift; sourceTree = "<group>"; };
 		8E66D63E280074DB002DA07B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		8E8B99C6280DBC26000CF8C6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8E8B99C8280DBC4A000CF8C6 /* SubOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubOnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 				8E3CEA1328041ACF00CCE925 /* ViewRouter.swift */,
 				8E3CEA172805CD1800CCE925 /* CartView.swift */,
 				8E3CEA1C2809C3EC00CCE925 /* MenuDetailView.swift */,
+				8E8B99C6280DBC26000CF8C6 /* OnboardingView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				8E66D63C27FF3E99002DA07B /* NotificationLabelView.swift */,
+				8E8B99C8280DBC4A000CF8C6 /* SubOnboardingView.swift */,
 			);
 			path = custom_view;
 			sourceTree = "<group>";
@@ -247,7 +253,9 @@
 				8E4ABF8C27ECBA4C00EF43F9 /* NotificationViewModel.swift in Sources */,
 				8E3FC53527E4ABD40080A950 /* ContentView.swift in Sources */,
 				8E3FC54E27EB60F00080A950 /* NotificationView.swift in Sources */,
+				8E8B99C9280DBC4A000CF8C6 /* SubOnboardingView.swift in Sources */,
 				8E3FC54C27EA1FA20080A950 /* SettingView.swift in Sources */,
+				8E8B99C7280DBC26000CF8C6 /* OnboardingView.swift in Sources */,
 				8E3FC54627E773660080A950 /* FoodStoreItem.swift in Sources */,
 				8E3CEA1D2809C3EC00CCE925 /* MenuDetailView.swift in Sources */,
 				8E3FC53327E4ABD40080A950 /* foodjetApp.swift in Sources */,
