@@ -31,6 +31,9 @@
 		8E66D63F280074DB002DA07B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66D63E280074DB002DA07B /* OrderView.swift */; };
 		8E8B99C7280DBC26000CF8C6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B99C6280DBC26000CF8C6 /* OnboardingView.swift */; };
 		8E8B99C9280DBC4A000CF8C6 /* SubOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B99C8280DBC4A000CF8C6 /* SubOnboardingView.swift */; };
+		8E8B99CF280DC63F000CF8C6 /* order-food.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B99CC280DC63F000CF8C6 /* order-food.json */; };
+		8E8B99D0280DC63F000CF8C6 /* food-to-client.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B99CD280DC63F000CF8C6 /* food-to-client.json */; };
+		8E8B99D1280DC63F000CF8C6 /* delivery-man.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B99CE280DC63F000CF8C6 /* delivery-man.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		8E66D63E280074DB002DA07B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		8E8B99C6280DBC26000CF8C6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		8E8B99C8280DBC4A000CF8C6 /* SubOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubOnboardingView.swift; sourceTree = "<group>"; };
+		8E8B99CC280DC63F000CF8C6 /* order-food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "order-food.json"; sourceTree = "<group>"; };
+		8E8B99CD280DC63F000CF8C6 /* food-to-client.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "food-to-client.json"; sourceTree = "<group>"; };
+		8E8B99CE280DC63F000CF8C6 /* delivery-man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "delivery-man.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,6 @@
 				0C3271931813184213FDA311 /* Pods-foodjet.debug.xcconfig */,
 				8A42E9E1C3ABAF91357E8129 /* Pods-foodjet.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,12 +119,12 @@
 		8E3FC53127E4ABD40080A950 /* foodjet */ = {
 			isa = PBXGroup;
 			children = (
+				8E8B99CA280DC5AA000CF8C6 /* Resource */,
 				8E3CEA19280860D300CCE925 /* Utils */,
 				8E3FC53227E4ABD40080A950 /* foodjetApp.swift */,
-				8E3FC54F27EB6E7E0080A950 /* mock */,
-				8E3FC54427E7733C0080A950 /* viewmodel */,
-				8E3FC54327E772B20080A950 /* model */,
-				8E3FC54027E76CA90080A950 /* view */,
+				8E3FC54427E7733C0080A950 /* Viewmodel */,
+				8E3FC54327E772B20080A950 /* Model */,
+				8E3FC54027E76CA90080A950 /* View */,
 				8E3FC53627E4ABD60080A950 /* Assets.xcassets */,
 				8E3FC53827E4ABD60080A950 /* Preview Content */,
 			);
@@ -134,10 +139,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8E3FC54027E76CA90080A950 /* view */ = {
+		8E3FC54027E76CA90080A950 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8E66D63B27FF3E74002DA07B /* custom_view */,
+				8E66D63B27FF3E74002DA07B /* CustomView */,
 				8E3FC53427E4ABD40080A950 /* ContentView.swift */,
 				8E3FC54127E76CE20080A950 /* HomeView.swift */,
 				8E3FC54B27EA1FA20080A950 /* SettingView.swift */,
@@ -152,41 +157,60 @@
 				8E3CEA1C2809C3EC00CCE925 /* MenuDetailView.swift */,
 				8E8B99C6280DBC26000CF8C6 /* OnboardingView.swift */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
-		8E3FC54327E772B20080A950 /* model */ = {
+		8E3FC54327E772B20080A950 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				8E3FC54527E773660080A950 /* FoodStoreItem.swift */,
 				8E3FC55127EB6FD80080A950 /* NotificationItem.swift */,
 			);
-			path = model;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		8E3FC54427E7733C0080A950 /* viewmodel */ = {
+		8E3FC54427E7733C0080A950 /* Viewmodel */ = {
 			isa = PBXGroup;
 			children = (
 				8E4ABF8B27ECBA4C00EF43F9 /* NotificationViewModel.swift */,
 			);
-			path = viewmodel;
+			path = Viewmodel;
 			sourceTree = "<group>";
 		};
-		8E3FC54F27EB6E7E0080A950 /* mock */ = {
+		8E3FC54F27EB6E7E0080A950 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
 				8E3FC55027EB6E9C0080A950 /* MockNotification.json */,
 			);
-			path = mock;
+			path = Mock;
 			sourceTree = "<group>";
 		};
-		8E66D63B27FF3E74002DA07B /* custom_view */ = {
+		8E66D63B27FF3E74002DA07B /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 				8E66D63C27FF3E99002DA07B /* NotificationLabelView.swift */,
 				8E8B99C8280DBC4A000CF8C6 /* SubOnboardingView.swift */,
 			);
-			path = custom_view;
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		8E8B99CA280DC5AA000CF8C6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B99CB280DC5E7000CF8C6 /* Lottie */,
+				8E3FC54F27EB6E7E0080A950 /* Mock */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8E8B99CB280DC5E7000CF8C6 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B99CE280DC63F000CF8C6 /* delivery-man.json */,
+				8E8B99CD280DC63F000CF8C6 /* food-to-client.json */,
+				8E8B99CC280DC63F000CF8C6 /* order-food.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		9E206ABD01512A6587BCCB6A /* Frameworks */ = {
@@ -257,9 +281,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8B99CF280DC63F000CF8C6 /* order-food.json in Resources */,
 				8E3FC55327EB7AAF0080A950 /* MockNotification.json in Resources */,
+				8E8B99D1280DC63F000CF8C6 /* delivery-man.json in Resources */,
 				8E3FC53A27E4ABD60080A950 /* Preview Assets.xcassets in Resources */,
 				8E3FC53727E4ABD60080A950 /* Assets.xcassets in Resources */,
+				8E8B99D0280DC63F000CF8C6 /* food-to-client.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
