@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EC3ACD9E-8672-4DCD-B406-FAAECF0B9E03"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02449179-3C65-4FFA-9D69-C4680D53E2AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "foodjet/View/OnboardingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "OnboardingView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "02449179-3C65-4FFA-9D69-C4680D53E2AA - 31a44c61de5f3a5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "foodjet.OnboardingView.init() -&gt; foodjet.OnboardingView"
+                  moduleName = "foodjet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/champnc/XcodeProjects/foodjet/foodjet/View/OnboardingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "02449179-3C65-4FFA-9D69-C4680D53E2AA - f4ab98921eb1c306"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "foodjet.OnboardingView.init(currentIndex: Swift.Int) -&gt; foodjet.OnboardingView"
+                  moduleName = "foodjet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/champnc/XcodeProjects/foodjet/foodjet/View/OnboardingView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

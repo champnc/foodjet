@@ -11,12 +11,14 @@ struct SubOnboardingView: View {
     var image: String
     
     var body: some View {
-        Image(image)
+        VStack {
+            LottieView(filename: image)
+        }
     }
 }
 
 struct SubOnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        SubOnboardingView(image: "food-placeholder")
+        SubOnboardingView(image: "order-food")
     }
 }

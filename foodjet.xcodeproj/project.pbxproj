@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68089B0CA8795B62B4BDD64B /* Pods_foodjet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725A085318FB972E94975058 /* Pods_foodjet.framework */; };
+		77F1B82A3C5551355CF36381 /* Pods_foodjet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8DC7214552CD3F2DBD0300 /* Pods_foodjet.framework */; };
 		8E3CEA0E2801E84100CCE925 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CEA0D2801E84100CCE925 /* RestaurantDetailView.swift */; };
 		8E3CEA1028040C2A00CCE925 /* AuthenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CEA0F28040C2A00CCE925 /* AuthenView.swift */; };
 		8E3CEA1228041A3200CCE925 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CEA1128041A3200CCE925 /* BaseView.swift */; };
@@ -34,12 +34,11 @@
 		8E8B99CF280DC63F000CF8C6 /* order-food.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B99CC280DC63F000CF8C6 /* order-food.json */; };
 		8E8B99D0280DC63F000CF8C6 /* food-to-client.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B99CD280DC63F000CF8C6 /* food-to-client.json */; };
 		8E8B99D1280DC63F000CF8C6 /* delivery-man.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B99CE280DC63F000CF8C6 /* delivery-man.json */; };
+		8EA82B0E280EFB3300A09D69 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA82B0D280EFB3300A09D69 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C3271931813184213FDA311 /* Pods-foodjet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodjet.debug.xcconfig"; path = "Target Support Files/Pods-foodjet/Pods-foodjet.debug.xcconfig"; sourceTree = "<group>"; };
-		725A085318FB972E94975058 /* Pods_foodjet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodjet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A42E9E1C3ABAF91357E8129 /* Pods-foodjet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodjet.release.xcconfig"; path = "Target Support Files/Pods-foodjet/Pods-foodjet.release.xcconfig"; sourceTree = "<group>"; };
+		59454ACB5D83A641C052B5DB /* Pods-foodjet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodjet.debug.xcconfig"; path = "Target Support Files/Pods-foodjet/Pods-foodjet.debug.xcconfig"; sourceTree = "<group>"; };
 		8E3CEA0D2801E84100CCE925 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		8E3CEA0F28040C2A00CCE925 /* AuthenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenView.swift; sourceTree = "<group>"; };
 		8E3CEA1128041A3200CCE925 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -67,6 +66,9 @@
 		8E8B99CC280DC63F000CF8C6 /* order-food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "order-food.json"; sourceTree = "<group>"; };
 		8E8B99CD280DC63F000CF8C6 /* food-to-client.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "food-to-client.json"; sourceTree = "<group>"; };
 		8E8B99CE280DC63F000CF8C6 /* delivery-man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "delivery-man.json"; sourceTree = "<group>"; };
+		8EA82B0D280EFB3300A09D69 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		9B8FE09F72F52FBC22633A7A /* Pods-foodjet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodjet.release.xcconfig"; path = "Target Support Files/Pods-foodjet/Pods-foodjet.release.xcconfig"; sourceTree = "<group>"; };
+		FA8DC7214552CD3F2DBD0300 /* Pods_foodjet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodjet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68089B0CA8795B62B4BDD64B /* Pods_foodjet.framework in Frameworks */,
+				77F1B82A3C5551355CF36381 /* Pods_foodjet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +86,8 @@
 		654CC57B3BBD2579318FFF19 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C3271931813184213FDA311 /* Pods-foodjet.debug.xcconfig */,
-				8A42E9E1C3ABAF91357E8129 /* Pods-foodjet.release.xcconfig */,
+				59454ACB5D83A641C052B5DB /* Pods-foodjet.debug.xcconfig */,
+				9B8FE09F72F52FBC22633A7A /* Pods-foodjet.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -104,7 +106,7 @@
 				8E3FC53127E4ABD40080A950 /* foodjet */,
 				8E3FC53027E4ABD40080A950 /* Products */,
 				654CC57B3BBD2579318FFF19 /* Pods */,
-				9E206ABD01512A6587BCCB6A /* Frameworks */,
+				CAEEBA73FE33EE4DF4EBE48C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +192,7 @@
 			children = (
 				8E66D63C27FF3E99002DA07B /* NotificationLabelView.swift */,
 				8E8B99C8280DBC4A000CF8C6 /* SubOnboardingView.swift */,
+				8EA82B0D280EFB3300A09D69 /* LottieView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -213,10 +216,10 @@
 			path = Lottie;
 			sourceTree = "<group>";
 		};
-		9E206ABD01512A6587BCCB6A /* Frameworks */ = {
+		CAEEBA73FE33EE4DF4EBE48C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				725A085318FB972E94975058 /* Pods_foodjet.framework */,
+				FA8DC7214552CD3F2DBD0300 /* Pods_foodjet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,11 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E3FC53D27E4ABD60080A950 /* Build configuration list for PBXNativeTarget "foodjet" */;
 			buildPhases = (
-				FF87A07B23D6F3C21D681F58 /* [CP] Check Pods Manifest.lock */,
+				8E031D87F21BAB9FCE67D4B7 /* [CP] Check Pods Manifest.lock */,
 				8E3FC52B27E4ABD40080A950 /* Sources */,
 				8E3FC52C27E4ABD40080A950 /* Frameworks */,
 				8E3FC52D27E4ABD40080A950 /* Resources */,
-				5E05416919E28653F827B687 /* [CP] Embed Pods Frameworks */,
+				0F16FE6B32B42E7C9137DD3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,7 +296,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5E05416919E28653F827B687 /* [CP] Embed Pods Frameworks */ = {
+		0F16FE6B32B42E7C9137DD3B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,7 +313,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-foodjet/Pods-foodjet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF87A07B23D6F3C21D681F58 /* [CP] Check Pods Manifest.lock */ = {
+		8E031D87F21BAB9FCE67D4B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,6 +353,7 @@
 				8E3FC53527E4ABD40080A950 /* ContentView.swift in Sources */,
 				8E3FC54E27EB60F00080A950 /* NotificationView.swift in Sources */,
 				8E8B99C9280DBC4A000CF8C6 /* SubOnboardingView.swift in Sources */,
+				8EA82B0E280EFB3300A09D69 /* LottieView.swift in Sources */,
 				8E3FC54C27EA1FA20080A950 /* SettingView.swift in Sources */,
 				8E8B99C7280DBC26000CF8C6 /* OnboardingView.swift in Sources */,
 				8E3FC54627E773660080A950 /* FoodStoreItem.swift in Sources */,
@@ -481,7 +485,7 @@
 		};
 		8E3FC53E27E4ABD60080A950 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C3271931813184213FDA311 /* Pods-foodjet.debug.xcconfig */;
+			baseConfigurationReference = 59454ACB5D83A641C052B5DB /* Pods-foodjet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,7 +515,7 @@
 		};
 		8E3FC53F27E4ABD60080A950 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A42E9E1C3ABAF91357E8129 /* Pods-foodjet.release.xcconfig */;
+			baseConfigurationReference = 9B8FE09F72F52FBC22633A7A /* Pods-foodjet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
