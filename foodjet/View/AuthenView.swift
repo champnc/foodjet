@@ -14,7 +14,9 @@ struct AuthenView: View {
         
         VStack {
             Button(action: {
-                viewRouter.currentPage = .mainPage
+                withAnimation {
+                    viewRouter.currentPage = .mainPage
+                }
             }) {
                 Text("to mainview")
             }

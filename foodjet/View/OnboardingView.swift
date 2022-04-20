@@ -20,7 +20,25 @@ struct OnboardingView: View {
             }
             .tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            .frame(width: .infinity, height: .infinity, alignment: .center)
+            if currentIndex == 2 {
+                Button {
+                    withAnimation {
+                        viewRouter.currentPage = .authenPage
+                    }
+                } label: {
+                    HStack(alignment: .center, spacing: 10) {
+                        Text("GET STARTED")
+                            .bold()
+                            .foregroundColor(Color.white)
+                    }
+                }.frame(minWidth: 0, maxWidth: 200, maxHeight: 50)
+                    .background(Color.orangeLight)
+                    .cornerRadius(4)
+                    .padding(.horizontal, 20)
+
+            } else {
+                Text("").frame(height: 50)
+            }
         }
     }
 }
