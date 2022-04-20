@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct SubOnboardingView: View {
-    var image: String
+    var imageName: String
+    var text: String
+    
+    init(_ imageName: String,_ text: String) {
+        self.imageName = imageName
+        self.text = text
+    }
     
     var body: some View {
         VStack {
-            LottieView(filename: image)
+            LottieView(filename: imageName).frame(maxWidth: 300, maxHeight: 300)
+            Text(text)
         }
     }
 }
 
 struct SubOnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        SubOnboardingView(image: "order-food")
+        SubOnboardingView("order-food", "test")
     }
 }

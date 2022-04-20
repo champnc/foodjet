@@ -14,9 +14,9 @@ struct OnboardingView: View {
     var body: some View {
         VStack {
             TabView(selection: $currentIndex) {
-                SubOnboardingView(image: "order-food").tag(0)
-                SubOnboardingView(image: "delivery-man").tag(1)
-                SubOnboardingView(image: "food-to-client").tag(2)
+                SubOnboardingView("order-food", "test 1").tag(0)
+                SubOnboardingView("delivery-man", "test 2").tag(1)
+                SubOnboardingView("food-to-client", "test 3").tag(2)
             }
             .tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
