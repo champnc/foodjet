@@ -14,7 +14,7 @@ class ViewRouter : ObservableObject {
             UserDefaults.standard.set(true, forKey: "didLaunchBefore")
             currentPage = .onboardPage
         } else {
-            currentPage = .authenPage
+            currentPage = .loginPage
         }
     }
     @Published var currentPage: Page

@@ -19,6 +19,8 @@ struct BaseView: View {
             OnboardingView(viewRouter: viewRouter)
         case .mainPage:
             MainView(viewRouter: viewRouter)
+        case .loginPage:
+            LoginView(viewRouter: viewRouter)
         }
     }
 }
@@ -33,5 +35,5 @@ enum Page {
     case authenPage
     case onboardPage
     case mainPage
-    
+    case loginPage
 }

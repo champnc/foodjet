@@ -23,7 +23,7 @@ struct OnboardingView: View {
             if currentIndex == 2 {
                 Button {
                     withAnimation {
-                        viewRouter.currentPage = .authenPage
+                        viewRouter.currentPage = .loginPage
                     }
                 } label: {
                     HStack(alignment: .center, spacing: 10) {
