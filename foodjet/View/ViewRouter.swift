@@ -8,5 +8,14 @@
 import Foundation
 
 class ViewRouter : ObservableObject {
-    @Published var currentPage: Page = .authenPage
+    
+    init() {
+        if !UserDefaults.standard.bool(forKey: "didLaunchBefore") {
+            UserDefaults.standard.set(true, forKey: "didLaunchBefore")
+            currentPage = .onboardPage
+        } else {
+            currentPage = .authenPage
+        }
+    }
+    @Published var currentPage: Page
 }

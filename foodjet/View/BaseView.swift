@@ -16,7 +16,7 @@ struct BaseView: View {
         case .authenPage:
             AuthenView(viewRouter: viewRouter)
         case .onboardPage:
-            AuthenView(viewRouter: viewRouter)
+            OnboardingView(viewRouter: viewRouter)
         case .mainPage:
             MainView(viewRouter: viewRouter)
         }

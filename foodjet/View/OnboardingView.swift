@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    
+    @StateObject var viewRouter: ViewRouter
     @State var currentIndex: Int = 0
     
     var body: some View {
@@ -27,6 +27,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(viewRouter: ViewRouter())
     }
 }
