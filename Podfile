@@ -7,4 +7,5 @@ target 'foodjet' do
 
   # Pods for foodjet
     pod 'lottie-ios'
+    pod 'Alamofire'
 end
