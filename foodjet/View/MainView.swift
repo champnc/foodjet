@@ -11,7 +11,7 @@ struct MainView: View {
     @StateObject var viewRouter: ViewRouter
     var body: some View {
         TabView {
-            HomeView().tabItem {
+            HomeView(viewRouter: viewRouter).tabItem {
                 Text("Home")
                 Image(systemName: "house.fill")
             }

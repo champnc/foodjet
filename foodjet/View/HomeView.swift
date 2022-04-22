@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State var searchQuery = ""
+    @StateObject var viewRouter: ViewRouter
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
@@ -44,8 +45,8 @@ struct HomeView: View {
                     }.padding()
                 }.navigationTitle(Text("Home")).searchable(text: $searchQuery,placement: .navigationBarDrawer(displayMode: .always))
                 if true {
-                    NavigationLink {
-                        CartView()
+                    Button {
+                        viewRouter.currentPage = .cartPage
                     } label: {
                         ZStack {
                             Circle().foregroundColor(.white).frame(width: 75, height: 75).offset(x: -20, y: -20).shadow(color: .gray, radius: 2, x: 2,y: 2)
@@ -70,7 +71,7 @@ struct FoodItem : View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView().previewInterfaceOrientation(.portrait)
+        HomeView(viewRouter: ViewRouter()).previewInterfaceOrientation(.portrait)
         FoodItem()
     }
 }
