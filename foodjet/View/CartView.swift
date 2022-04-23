@@ -10,19 +10,15 @@ import Foundation
 
 struct CartView: View {
     @StateObject var viewRouter: ViewRouter
-    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var datas = ReadCartData()
+    
     var body: some View {
         
         NavigationView {
-            VStack {
-                ZStack {
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .edgesIgnoringSafeArea(.all)
-                    
-                    Text("Hello")
-                }
+            List(datas.cartList) { cart in
+                NotificationItemView(title: cart.title, time: cart.time, desc: "")
             }
+            .navigationTitle(Text("Cart"))
             .navigationBarItems(leading: BackButton(goBack: self.goBack))
         }
     }
@@ -51,5 +47,26 @@ struct BackButton: View {
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
         CartView(viewRouter: ViewRouter())
+    }
+}
+
+class ReadCartData: ObservableObject  {
+    @Published var cartList = [CartItem]()
+
+        
+    init(){
+        loadData()
+    }
+    
+    func loadData()  {
+        guard let url = Bundle.main.url(forResource: "MockCart", withExtension: "json")
+            else {
+                print("Json file not found")
+                return
+            }
+        
+        let data = try? Data(contentsOf: url)
+        let cart = try? JSONDecoder().decode([CartItem].self, from: data!)
+        self.cartList = cart!
     }
 }

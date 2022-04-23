@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NotificationView: View {
-    @ObservedObject var datas = ReadData()
+    @ObservedObject var datas = ReadNotificationData()
     
     var body: some View {
         NavigationView {
@@ -53,7 +53,7 @@ struct NotificationView_Previews: PreviewProvider {
     }
 }
 
-class ReadData: ObservableObject  {
+class ReadNotificationData: ObservableObject  {
     @Published var notificationList = [NotificationItem]()
 
         
