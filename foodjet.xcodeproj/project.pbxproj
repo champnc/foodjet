@@ -37,6 +37,7 @@
 		8EA82B0E280EFB3300A09D69 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA82B0D280EFB3300A09D69 /* LottieView.swift */; };
 		8EA82B14281444D000A09D69 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA82B13281444D000A09D69 /* CartItem.swift */; };
 		8EA82B162814454600A09D69 /* MockCart.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EA82B152814454600A09D69 /* MockCart.json */; };
+		8EA82B182815801900A09D69 /* OrderOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA82B172815801900A09D69 /* OrderOverviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		8EA82B0D280EFB3300A09D69 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		8EA82B13281444D000A09D69 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		8EA82B152814454600A09D69 /* MockCart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockCart.json; sourceTree = "<group>"; };
+		8EA82B172815801900A09D69 /* OrderOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOverviewView.swift; sourceTree = "<group>"; };
 		9B8FE09F72F52FBC22633A7A /* Pods-foodjet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodjet.release.xcconfig"; path = "Target Support Files/Pods-foodjet/Pods-foodjet.release.xcconfig"; sourceTree = "<group>"; };
 		FA8DC7214552CD3F2DBD0300 /* Pods_foodjet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodjet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				8E3CEA172805CD1800CCE925 /* CartView.swift */,
 				8E3CEA1C2809C3EC00CCE925 /* MenuDetailView.swift */,
 				8E8B99C6280DBC26000CF8C6 /* OnboardingView.swift */,
+				8EA82B172815801900A09D69 /* OrderOverviewView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				8E3FC54E27EB60F00080A950 /* NotificationView.swift in Sources */,
 				8E8B99C9280DBC4A000CF8C6 /* SubOnboardingView.swift in Sources */,
 				8EA82B0E280EFB3300A09D69 /* LottieView.swift in Sources */,
+				8EA82B182815801900A09D69 /* OrderOverviewView.swift in Sources */,
 				8E3FC54C27EA1FA20080A950 /* SettingView.swift in Sources */,
 				8E8B99C7280DBC26000CF8C6 /* OnboardingView.swift in Sources */,
 				8E3FC54627E773660080A950 /* FoodStoreItem.swift in Sources */,
