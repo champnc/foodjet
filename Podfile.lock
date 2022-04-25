@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (5.6.1)
+  - GoogleMaps (6.1.1):
+    - GoogleMaps/Maps (= 6.1.1)
+  - GoogleMaps/Base (6.1.1)
+  - GoogleMaps/Maps (6.1.1):
+    - GoogleMaps/Base
   - lottie-ios (3.3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - GoogleMaps
   - lottie-ios
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - GoogleMaps
     - lottie-ios
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  GoogleMaps: 94e6e0851beece6678af9f508f4918b7a7c61722
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
 
-PODFILE CHECKSUM: 5eba7a6211638b1c3991fa985d331e9310d24788
+PODFILE CHECKSUM: a840e512ba9c1c101f6933d3a6a73976bbb3de09
 
 COCOAPODS: 1.11.3
