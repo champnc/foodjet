@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RestaurantDetailView: View {
     var body: some View {
+        ZStack(alignment:.bottomTrailing) {
             ScrollView(.vertical) {
                 VStack {
                     HStack{
@@ -30,7 +31,20 @@ struct RestaurantDetailView: View {
                     MenuSectionView()
                     Divider()
                 }.navigationBarTitle("Restaurant Name")
+                
             }
+            if true {
+                NavigationLink(destination: {
+                    OrderOverviewView()
+                }, label: {
+                    HStack{
+                        Text("eiei")
+                        Spacer()
+                        Text("100")
+                    }.padding().frame(width: UIScreen.main.bounds.size.width - 40, height: 50).background(.white).cornerRadius(15).offset(x: -20, y: -20).shadow(color: .gray, radius: 2, x: 2,y: 2)
+                })
+            }
+        }
     }
 }
 
