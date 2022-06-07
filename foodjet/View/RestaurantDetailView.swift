@@ -21,7 +21,7 @@ struct RestaurantDetailView: View {
                             MenuOverviewItemView()
                             MenuOverviewItemView()
                             MenuOverviewItemView()
-                        }.padding()
+                        }.padding(.horizontal)
                     }
                     MenuSectionView()
                     Divider()
